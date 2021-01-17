@@ -4,10 +4,10 @@ const defaultPermissions = {
   canAdd: false
 }
 
-function createUser(name){
+function createUser(name, permissions){
   return {
     name,
-    permissions: defaultPermissions
+    permissions: {...defaultPermissions}
   }
 }
 
